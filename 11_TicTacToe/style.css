@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -13,6 +16,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 15px;
 }
 
 .ticTac{
@@ -33,4 +41,20 @@ body{
     background-color: white;
     border: 1px solid #212121;
     cursor: pointer;
+}
+
+#rstbtn{
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: yellow;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.winnerClass {
+    background-color: red;
 }
