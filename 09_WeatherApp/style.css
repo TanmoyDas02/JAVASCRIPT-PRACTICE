@@ -6,115 +6,80 @@
 }
 
 body{
-    background-color: #222;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.card{
-    width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #00feba, #5b548a);
-    color: #fff;
-    margin: 100px auto 0;
-    border-radius: 20px;
-    padding: 40px 35px;
+.main{
+    padding: 30px;
+    width: 50%;
+    min-height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+}
+
+.firstDiv, .secondDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#cityName, #searchBtn, .firstDiv > button{
+    font-size: 1.2em;
+    border: none;
+    padding: 10px;
+}
+
+.firstDiv > button{
+    width: 70%;
+}
+
+.firstDiv > p{
+    font-size: 1.5em;
     text-align: center;
 }
 
-.search{
+#wearherInfo{
+    margin-top: 20px;
     width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.search input{
-    border: 0;
-    outline: 00;
-    background: #ebfffc;
-    color: #555;
-    padding: 10px 25px;
-    height: 60px;
-    border-radius: 30px;
-    flex: 1;
-    margin-right: 16px;
-    font-size: 18px;
+#temp{
+    font-size: 4em;
 }
 
-.search button{
-    border: 0;
-    outline: 00;
-    background: #ebfffc;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
+#city{
+    font-size: 2em;
 }
 
-.search button img{
-    width: 16px;
-}
-
-.weather-icon{
-    width: 170px;
-    margin-top: 30px;
-}
-
-.weather h1{
-    font-size: 80px;
-    font-weight: 500;
-}
-
-.weather h1{
-    font-size: 45px;
-    font-weight: 400;
-    margin-top: -10px;
-}
-
-.details{
+.otherInfo{
+    width: 100%;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    margin-top: 50px;
 }
 
-.col{
+.wind{
     display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: left;
+    flex-direction: column;
 }
 
-.col img{
-    width: 40px;
-    margin-right: 10px;
-}
-
-.humidity, .wind{
-    font-size: 28px;
-    margin-top: -6px;
-}
-
-@media screen and (min-width: 0px) and (max-width: 481px) {
-    .card{
-        width: 92%;
-    }
-    .search input {
-        padding: 10px 15px;
-        height: 53px;
-        margin-right: 8px;
-        font-size: 17px;
-    }
-
-    .search button {
-        width: 50px;
-        height: 50px;
-    }
-
-    .details {    
-        padding: 0px;
-    }
-
-    .humidity, .wind {
-        font-size: 20px;
-    }
+.wind > p{
+    font-size: 1.5em;
 }
