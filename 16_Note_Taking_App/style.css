@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.note{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    font-size: 2em;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    background-color: #efb79d;
+}
+
+.main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#txtA{
+    background-color: pink;
+}
+
+.note::-webkit-scrollbar{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+#allNote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.singleNote{
+    background-color: red;
+    border-radius: 10px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+#editBtn, #removeBtn, #btn{
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.date{
+    font-size: 1.5em;
+    margin: 10px;
+}
